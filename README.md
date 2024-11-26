@@ -44,3 +44,43 @@ The Face Verification System is an advanced application designed to facilitate s
 
 **3] Database:** MySQL
 
+## Prerequisites
+
+**Python 3.7 or later:**
+
+- Required Python libraries:
+
+pip install opencv-python-headless pillow mysql-connector-python numpy
+
+**MySQL Server**:
+
+- Ensure MySQL is installed and running.
+- Configure your database with the necessary tables (refer to the database scripts in the project).
+
+## Project Structure
+
+- **main.py:** Entry point of the application with GUI integration.
+
+- **voter.py:** Module for managing voter details.
+
+- **train.py:** Handles dataset training and model generation.
+
+- **recognition.py**: Core facial recognition and verification logic.
+
+- **verification.py:** Implements CSV import/export and verified user management.
+
+- **data:** Directory to store captured and trained images.
+
+## How It Works
+
+1] **Add Voter Details:**
+Use the GUI to input personal details and capture image samples.
+
+2] **Train Dataset:**
+Train the model using the stored voter images.
+
+3] **Verify Voters:**
+Use the facial recognition feature to match users against the trained dataset.
+
+4] **Export Verified Data:**
+Save verified records for auditing or reporting purposes.
